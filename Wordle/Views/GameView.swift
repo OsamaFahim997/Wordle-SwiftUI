@@ -13,15 +13,27 @@ struct GameView: View {
     
     var body: some View {
         NavigationView {
-            VStack(spacing: 3, content: {
-                GuessView(guess: $dm.guesses[0])
-                GuessView(guess: $dm.guesses[1])
-                GuessView(guess: $dm.guesses[2])
-                GuessView(guess: $dm.guesses[3])
-                GuessView(guess: $dm.guesses[4])
-                GuessView(guess: $dm.guesses[5])
-            })
-            .frame(width: Global.boardWidth, height: 6 * (Global.boardWidth / 5))
+            VStack {
+                Spacer()
+                VStack(spacing: 3, content: {
+                    GuessView(guess: $dm.guesses[0])
+                    GuessView(guess: $dm.guesses[1])
+                    GuessView(guess: $dm.guesses[2])
+                    GuessView(guess: $dm.guesses[3])
+                    GuessView(guess: $dm.guesses[4])
+                    GuessView(guess: $dm.guesses[5])
+                })
+                .frame(width: Global.boardWidth, height: 6 * (Global.boardWidth / 5))
+                
+                Spacer()
+                KeyboardView()
+                    .scaleEffect(Global.keyboardScale)
+                    .padding(.top)
+                
+                Spacer()
+            }
+            
+            
                 .navigationViewStyle(.stack)
                 .toolbar(content: {
                     ToolbarItem(placement: .topBarLeading) {

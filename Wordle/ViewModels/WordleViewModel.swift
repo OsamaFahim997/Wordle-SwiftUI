@@ -11,6 +11,8 @@ class WordleViewModel: ObservableObject {
     
     @Published var guesses: [GuessModel] = []
     
+    var keyColors = [String: Color]()
+    
     init() {
         startNewGame()
     }
@@ -23,6 +25,11 @@ class WordleViewModel: ObservableObject {
         guesses = []
         for index in 0...5 {
             guesses.append(GuessModel(index: index))
+        }
+        
+        let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        for char in letters {
+            keyColors[String(char)] = .unused
         }
     }
     
