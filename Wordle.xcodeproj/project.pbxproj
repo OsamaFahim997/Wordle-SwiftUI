@@ -7,24 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7AD9AA702D1975C20095336E /* WordleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD9AA6F2D1975C20095336E /* WordleApp.swift */; };
-		7AD9AA722D1975C20095336E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD9AA712D1975C20095336E /* ContentView.swift */; };
-		7AD9AA742D1975C30095336E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD9AA732D1975C30095336E /* Assets.xcassets */; };
-		7AD9AA772D1975C30095336E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD9AA762D1975C30095336E /* Preview Assets.xcassets */; };
-		7AD9AA7E2D1976280095336E /* UbiquitousStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD9AA7D2D1976280095336E /* UbiquitousStore.swift */; };
+		7AD9AA8C2D1978C10095336E /* WordleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD9AA8B2D1978C10095336E /* WordleApp.swift */; };
+		7AD9AA8E2D1978C10095336E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD9AA8D2D1978C10095336E /* ContentView.swift */; };
+		7AD9AA902D1978C20095336E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD9AA8F2D1978C20095336E /* Assets.xcassets */; };
+		7AD9AA932D1978C20095336E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD9AA922D1978C20095336E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7AD9AA6C2D1975C20095336E /* Wordle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wordle.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AD9AA6F2D1975C20095336E /* WordleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleApp.swift; sourceTree = "<group>"; };
-		7AD9AA712D1975C20095336E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7AD9AA732D1975C30095336E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7AD9AA762D1975C30095336E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7AD9AA7D2D1976280095336E /* UbiquitousStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UbiquitousStore.swift; sourceTree = SOURCE_ROOT; };
+		7AD9AA882D1978C10095336E /* Wordle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wordle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AD9AA8B2D1978C10095336E /* WordleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleApp.swift; sourceTree = "<group>"; };
+		7AD9AA8D2D1978C10095336E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7AD9AA8F2D1978C20095336E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7AD9AA922D1978C20095336E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7AD9AA692D1975C20095336E /* Frameworks */ = {
+		7AD9AA852D1978C10095336E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,38 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7AD9AA632D1975C20095336E = {
+		7AD9AA7F2D1978C10095336E = {
 			isa = PBXGroup;
 			children = (
-				7AD9AA6E2D1975C20095336E /* Wordle */,
-				7AD9AA6D2D1975C20095336E /* Products */,
+				7AD9AA8A2D1978C10095336E /* Wordle */,
+				7AD9AA892D1978C10095336E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7AD9AA6D2D1975C20095336E /* Products */ = {
+		7AD9AA892D1978C10095336E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7AD9AA6C2D1975C20095336E /* Wordle.app */,
+				7AD9AA882D1978C10095336E /* Wordle.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7AD9AA6E2D1975C20095336E /* Wordle */ = {
+		7AD9AA8A2D1978C10095336E /* Wordle */ = {
 			isa = PBXGroup;
 			children = (
-				7AD9AA7D2D1976280095336E /* UbiquitousStore.swift */,
-				7AD9AA6F2D1975C20095336E /* WordleApp.swift */,
-				7AD9AA712D1975C20095336E /* ContentView.swift */,
-				7AD9AA732D1975C30095336E /* Assets.xcassets */,
-				7AD9AA752D1975C30095336E /* Preview Content */,
+				7AD9AA8B2D1978C10095336E /* WordleApp.swift */,
+				7AD9AA8D2D1978C10095336E /* ContentView.swift */,
+				7AD9AA8F2D1978C20095336E /* Assets.xcassets */,
+				7AD9AA912D1978C20095336E /* Preview Content */,
 			);
 			path = Wordle;
 			sourceTree = "<group>";
 		};
-		7AD9AA752D1975C30095336E /* Preview Content */ = {
+		7AD9AA912D1978C20095336E /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				7AD9AA762D1975C30095336E /* Preview Assets.xcassets */,
+				7AD9AA922D1978C20095336E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -73,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7AD9AA6B2D1975C20095336E /* Wordle */ = {
+		7AD9AA872D1978C10095336E /* Wordle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7AD9AA7A2D1975C30095336E /* Build configuration list for PBXNativeTarget "Wordle" */;
+			buildConfigurationList = 7AD9AA962D1978C20095336E /* Build configuration list for PBXNativeTarget "Wordle" */;
 			buildPhases = (
-				7AD9AA682D1975C20095336E /* Sources */,
-				7AD9AA692D1975C20095336E /* Frameworks */,
-				7AD9AA6A2D1975C20095336E /* Resources */,
+				7AD9AA842D1978C10095336E /* Sources */,
+				7AD9AA852D1978C10095336E /* Frameworks */,
+				7AD9AA862D1978C10095336E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -87,25 +84,25 @@
 			);
 			name = Wordle;
 			productName = Wordle;
-			productReference = 7AD9AA6C2D1975C20095336E /* Wordle.app */;
+			productReference = 7AD9AA882D1978C10095336E /* Wordle.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7AD9AA642D1975C20095336E /* Project object */ = {
+		7AD9AA802D1978C10095336E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					7AD9AA6B2D1975C20095336E = {
+					7AD9AA872D1978C10095336E = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
 			};
-			buildConfigurationList = 7AD9AA672D1975C20095336E /* Build configuration list for PBXProject "Wordle" */;
+			buildConfigurationList = 7AD9AA832D1978C10095336E /* Build configuration list for PBXProject "Wordle" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,43 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 7AD9AA632D1975C20095336E;
-			productRefGroup = 7AD9AA6D2D1975C20095336E /* Products */;
+			mainGroup = 7AD9AA7F2D1978C10095336E;
+			productRefGroup = 7AD9AA892D1978C10095336E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7AD9AA6B2D1975C20095336E /* Wordle */,
+				7AD9AA872D1978C10095336E /* Wordle */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7AD9AA6A2D1975C20095336E /* Resources */ = {
+		7AD9AA862D1978C10095336E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AD9AA772D1975C30095336E /* Preview Assets.xcassets in Resources */,
-				7AD9AA742D1975C30095336E /* Assets.xcassets in Resources */,
+				7AD9AA932D1978C20095336E /* Preview Assets.xcassets in Resources */,
+				7AD9AA902D1978C20095336E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7AD9AA682D1975C20095336E /* Sources */ = {
+		7AD9AA842D1978C10095336E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AD9AA7E2D1976280095336E /* UbiquitousStore.swift in Sources */,
-				7AD9AA722D1975C20095336E /* ContentView.swift in Sources */,
-				7AD9AA702D1975C20095336E /* WordleApp.swift in Sources */,
+				7AD9AA8E2D1978C10095336E /* ContentView.swift in Sources */,
+				7AD9AA8C2D1978C10095336E /* WordleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		7AD9AA782D1975C30095336E /* Debug */ = {
+		7AD9AA942D1978C20095336E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -212,7 +208,7 @@
 			};
 			name = Debug;
 		};
-		7AD9AA792D1975C30095336E /* Release */ = {
+		7AD9AA952D1978C20095336E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -268,7 +264,7 @@
 			};
 			name = Release;
 		};
-		7AD9AA7B2D1975C30095336E /* Debug */ = {
+		7AD9AA972D1978C20095336E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -282,9 +278,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIRequiresFullScreen = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +293,7 @@
 			};
 			name = Debug;
 		};
-		7AD9AA7C2D1975C30095336E /* Release */ = {
+		7AD9AA982D1978C20095336E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -312,9 +307,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIRequiresFullScreen = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,25 +325,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7AD9AA672D1975C20095336E /* Build configuration list for PBXProject "Wordle" */ = {
+		7AD9AA832D1978C10095336E /* Build configuration list for PBXProject "Wordle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7AD9AA782D1975C30095336E /* Debug */,
-				7AD9AA792D1975C30095336E /* Release */,
+				7AD9AA942D1978C20095336E /* Debug */,
+				7AD9AA952D1978C20095336E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7AD9AA7A2D1975C30095336E /* Build configuration list for PBXNativeTarget "Wordle" */ = {
+		7AD9AA962D1978C20095336E /* Build configuration list for PBXNativeTarget "Wordle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7AD9AA7B2D1975C30095336E /* Debug */,
-				7AD9AA7C2D1975C30095336E /* Release */,
+				7AD9AA972D1978C20095336E /* Debug */,
+				7AD9AA982D1978C20095336E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7AD9AA642D1975C20095336E /* Project object */;
+	rootObject = 7AD9AA802D1978C10095336E /* Project object */;
 }
