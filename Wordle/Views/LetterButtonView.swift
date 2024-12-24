@@ -14,7 +14,9 @@ struct LetterButtonView: View {
     var letter: String
     
     var body: some View {
-        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+        Button(action: {
+            dm.addLetterToCurrentWord(letter: letter)
+        }, label: {
             Text(letter)
                 .font(.system(size: 20))
                 .frame(width: 35, height: 50)

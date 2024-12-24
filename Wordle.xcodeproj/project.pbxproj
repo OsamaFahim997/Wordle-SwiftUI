@@ -18,6 +18,7 @@
 		7AD9AAA62D1987570095336E /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD9AAA52D1987570095336E /* Global.swift */; };
 		7AD9AAA82D198EE50095336E /* LetterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD9AAA72D198EE50095336E /* LetterButtonView.swift */; };
 		7AD9AAAA2D198FD30095336E /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD9AAA92D198FD30095336E /* KeyboardView.swift */; };
+		7AD9AAAD2D19A85B0095336E /* ShakeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD9AAAC2D19A85A0095336E /* ShakeAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		7AD9AAA52D1987570095336E /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		7AD9AAA72D198EE50095336E /* LetterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterButtonView.swift; sourceTree = "<group>"; };
 		7AD9AAA92D198FD30095336E /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		7AD9AAAC2D19A85A0095336E /* ShakeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		7AD9AAA12D1982F00095336E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7AD9AAAB2D19A8450095336E /* Animation */,
 				7AD9AA8D2D1978C10095336E /* GameView.swift */,
 				7AD9AA9F2D1982EA0095336E /* GuessView.swift */,
 				7AD9AAA72D198EE50095336E /* LetterButtonView.swift */,
@@ -118,6 +121,14 @@
 				7AD9AAA32D1983E20095336E /* WordleViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7AD9AAAB2D19A8450095336E /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				7AD9AAAC2D19A85A0095336E /* ShakeAnimation.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 				7AD9AAA02D1982EA0095336E /* GuessView.swift in Sources */,
 				7AD9AAAA2D198FD30095336E /* KeyboardView.swift in Sources */,
 				7AD9AA8E2D1978C10095336E /* GameView.swift in Sources */,
+				7AD9AAAD2D19A85B0095336E /* ShakeAnimation.swift in Sources */,
 				7AD9AA8C2D1978C10095336E /* WordleApp.swift in Sources */,
 				7AD9AA9D2D1981A70095336E /* GuessModel.swift in Sources */,
 				7AD9AAA42D1983E20095336E /* WordleViewModel.swift in Sources */,
