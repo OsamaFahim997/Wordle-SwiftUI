@@ -17,6 +17,7 @@ class WordleViewModel: ObservableObject {
     var currentWord = ""
     var tryIndex = 0
     var inPlay: Bool = false
+    var gameOver = false
     
     var gameStarted: Bool {
         !currentWord.isEmpty || tryIndex > 0
@@ -35,6 +36,9 @@ class WordleViewModel: ObservableObject {
         selectedWord = Global.commonwords.randomElement()!
         currentWord = ""
         inPlay = true
+        tryIndex = 0
+        gameOver = false
+        print("SElected word is \(selectedWord)")
     }
     
     func populateDefaults() {
@@ -56,8 +60,21 @@ class WordleViewModel: ObservableObject {
     }
     
     func enterWord() {
+        guard currentWord != selectedWord else {
+            gameOver = true
+            setCurrentGuessColors()
+            print("You won")
+            return
+        }
         if verifyWord() {
-            print("Valid word")
+            setCurrentGuessColors()
+            tryIndex += 1
+            currentWord = ""
+            if tryIndex == 6 {
+                gameOver = true
+                inPlay = false
+                print("You lose")
+            }
         } else {
             withAnimation {
                 self.incorrectAttempts[tryIndex] += 1
@@ -78,5 +95,41 @@ class WordleViewModel: ObservableObject {
     
     func verifyWord() -> Bool {
         UIReferenceLibraryViewController.dictionaryHasDefinition(forTerm: currentWord)
+    }
+    
+    private func setCurrentGuessColors() {
+        let correctLetters = selectedWord.map({ String($0) })
+        
+        var frequency = [Character: Int]()
+        for letter in selectedWord {
+            frequency[letter, default: 0] += 1
+        }
+        
+        for index in 0 ... 4 {
+            let letter = correctLetters[index]
+            let guessedLetter = guesses[tryIndex].guessLetters[index]
+            
+            if letter == guessedLetter, frequency[Character(guessedLetter)] != 0 {
+                guesses[tryIndex].bgColors[index] = .correct
+                keyColors[guessedLetter] = .correct
+                frequency[Character(guessedLetter)]! -= 1
+            } else if selectedWord.contains(guessedLetter), frequency[Character(guessedLetter)] != 0 {
+                keyColors[guessedLetter] = .misplaced
+                guesses[tryIndex].bgColors[index] = .misplaced
+            } else {
+                keyColors[guessedLetter] = .wrong
+                guesses[tryIndex].bgColors[index] = .wrong
+            }
+        }
+        
+        flipCards(for: tryIndex)
+    }
+    
+    func flipCards(for row: Int) {
+        for col in 0 ... 4 {
+            DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
+                self.guesses[row].flippedCards[col].toggle()
+            })
+        }
     }
 }
